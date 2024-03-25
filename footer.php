@@ -1,9 +1,9 @@
- <footer class="site-footer">
-   <p class="copyright">&copy; 2022 WCB Natural Life</p>
- </footer>
+  <footer class="site-footer">
+    <p class="copyright">&copy; 2022 WCB Natural Life</p>
+  </footer>
 
- <!-- Script -->
- <script src="js/script.js"></script>
- </body>
+  <!-- Script -->
+  <script src="js/script.js"></script>
+  </body>
 
- </html>
+  </html>

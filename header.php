@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WCB Natural Life</title>
-  <link rel="icon" href="images/leaf-left.svg" type="image/svg+xml">
+  <link rel="icon" href="<?php echo esc_url(get_theme_file_uri('/images/leaf-left.svg')); ?>" type="image/svg+xml">
   <?php wp_head(); ?>
 </head>
 
-<body class="home">
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <header class="site-header">
     <div class="wrapper">
       <h1 class="site-title">
-        <a href="#">
-          <img class="site-logo" src="images/logo.svg" alt="WCB Natural Life">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <img class="site-logo" src="<?php echo esc_url(get_theme_file_uri('/images/logo.svg')); ?>"
+            alt="<?php bloginfo('name'); ?>">
         </a>
       </h1>
-      <p class="site-description">キャンプやアウトドアなど、自然と一緒に生活する情報をお届けします</p>
+      <p class="site-description"><?php bloginfo('description'); ?></p>
     </div>
   </header>
   <nav class="primary-navigation wrapper">
