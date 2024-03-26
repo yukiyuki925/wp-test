@@ -16,6 +16,9 @@ function theme_setup(){
   // titleタグ 
   add_theme_support('title-tag');
 
+  // アイキャッチ画像
+  add_theme_support('post-thumbnails');
+
   // メニュー 
   register_nav_menus(
     array(
