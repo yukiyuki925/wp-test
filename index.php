@@ -5,17 +5,15 @@
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <article class="post-item">
-      <a href="#">
+      <a href="<?php echo esc_url(get_permalink()); ?>">
         <img src="images/img-fruits.jpg" alt="" class="wp-post-image">
       </a>
       <header class="post-header">
         <h2 class="post-title">
-          <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
+          <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?>初心者必携のキャンプグッズ おすすめ10選</a>
         </h2>
-        <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-        <ul class="post-categories">
-          <li><a href="#">オーガニックフード</a></li>
-        </ul>
+        <time class="post-date" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_date(); ?></time>
+        <?php the_category() ?>
       </header>
     </article>
     <?php endwhile; ?>
