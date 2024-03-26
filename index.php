@@ -27,9 +27,8 @@
   </div>
 
   <div class="nav-links">
-    <a href="#">← 新しい投稿</a>
-    <a href="#">過去の投稿 →</a>
+    <?php posts_nav_link(); ?>
   </div>
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer('', '新しい投稿', '過去の投稿'); ?>
