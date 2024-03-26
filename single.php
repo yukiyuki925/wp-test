@@ -44,13 +44,7 @@
         </blockquote>
       </div>
       <footer class="post-footer wrapper">
-        <div class="tags-links">
-          <ul>
-            <li><a href="#">初心者</a></li>
-            <li><a href="#">健康</a></li>
-            <li><a href="#">オーガニックフード</a></li>
-          </ul>
-        </div>
+        <?php the_tags('<div class="tags-links"><ul><li>','</li><li>', '</ul></div>' ); ?>
       </footer>
     </article>
     <?php endwhile; else : ?>
